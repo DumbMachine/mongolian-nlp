@@ -29,11 +29,11 @@ class CustomTTSWrapper(BaseTTSWrapper):
     }
     DEFAULT_LANGUAGE = ENG
 
-    # OUTPUT_AUDIO_FORMAT = ("pcm_s16le", 1, 22050)
+    OUTPUT_AUDIO_FORMAT = ("pcm_s16le", 1, 22050)
     #
     # aeneas seems to optimized for espeak which produce fast speeches. So fine tune the sample rate!
     #
-    OUTPUT_AUDIO_FORMAT = ("pcm_f32le", 1, int(22050 * 0.73))
+    # OUTPUT_AUDIO_FORMAT = ("pcm_f32le", 1, int(22050 * 0.73))
 
     #
     # NOTE calling Tacotron2 via subprocess
