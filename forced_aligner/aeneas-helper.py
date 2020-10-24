@@ -19,13 +19,15 @@ class CustomTTSWrapper(BaseTTSWrapper):
 
     MON = "mon"
     KOR = "kr"
+    ENG = "en"
     """Mongolian"""
 
     LANGUAGE_TO_VOICE_CODE = {
         MON: "mn",
-        KOR: "kr"
+        KOR: "kr",
+        ENG: "en"
     }
-    DEFAULT_LANGUAGE = KOR
+    DEFAULT_LANGUAGE = ENG
 
     # OUTPUT_AUDIO_FORMAT = ("pcm_s16le", 1, 22050)
     #
