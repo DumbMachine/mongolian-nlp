@@ -18,12 +18,14 @@ tacotron2_synthesizer_path = path.join(path.dirname(path.realpath(__file__)), 'a
 class CustomTTSWrapper(BaseTTSWrapper):
 
     MON = "mon"
+    KOR = "kr"
     """Mongolian"""
 
     LANGUAGE_TO_VOICE_CODE = {
-        MON: "mn"
+        MON: "mn",
+        KOR: "kr"
     }
-    DEFAULT_LANGUAGE = MON
+    DEFAULT_LANGUAGE = KOR
 
     # OUTPUT_AUDIO_FORMAT = ("pcm_s16le", 1, 22050)
     #
